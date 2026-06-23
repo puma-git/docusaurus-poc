@@ -1,41 +1,85 @@
-# Website
+# Documentation Modernization POC
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## Overview
 
-## Installation
+This repository contains a Docusaurus-based Proof of Concept (POC) to evaluate a modern documentation platform with support for versioning, search, theming, AI integration, and Docs-as-Code workflows.
 
-```bash
-yarn
+## Tech Stack
+
+* Docusaurus
+* React
+* MDX
+* Node.js
+* npm
+* GitHub Actions / GitLab CI/CD
+* Elasticsearch (Evaluation)
+* Ollama (AI/RAG Evaluation)
+
+## Features
+
+* Modern documentation experience
+* Light/Dark theme support
+* Documentation versioning
+* Full-text search
+* MDX-based content authoring
+* Git-based review and publishing workflow
+* AI-assisted documentation exploration (POC)
+
+## Project Structure
+
+```text
+docs/               # Documentation content
+src/                # Custom React components and pages
+static/             # Static assets
+versioned_docs/     # Versioned documentation
+blog/               # Release notes and announcements
 ```
 
 ## Local Development
 
-```bash
-yarn start
-```
+### Prerequisites
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+* Node.js 20+
+* npm 10+
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+### Install Dependencies
 
 ```bash
-USE_SSH=true yarn deploy
+npm install
 ```
 
-Not using SSH:
+### Start Development Server
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The site will be available at:
+
+```text
+http://localhost:3000
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Serve Production Build
+
+```bash
+npm run serve
+```
+
+## Goals
+
+* Evaluate Docusaurus as an alternative documentation platform
+* Assess migration feasibility from MadCap Flare
+* Validate versioning, search, and customization capabilities
+* Explore AI-powered documentation assistance
+* Demonstrate a scalable Docs-as-Code workflow
+
+## License
+
+This repository is intended for evaluation and proof-of-concept purposes.
